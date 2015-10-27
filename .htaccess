@@ -1,0 +1,8 @@
+options +FollowSymlinks
+RewriteEngine on
+
+#RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+#RewriteRule .* – [F,L]
+
+RewriteCond $1 !^(index\.php|res/|css/|script/|cache/|admin/|o3/|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
