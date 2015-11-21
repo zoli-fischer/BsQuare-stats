@@ -3,15 +3,34 @@
 class result {
 
 	//get results
+	static function get_results() {
+		global $o3;
+		$return = array();
+		$result = $o3->mysqli->select( 'results', array(), '*', '', ' created DESC ' );
+		while ( $row = $result->fetch_object() ) {
+			$return[] = array(
+				'id' => $row->id,
+				'cpr' => $row->cpr,
+				'score_left' => $row->score_left,
+				'score_right' => $row->score_right,
+				'score' => $row->score,
+				'created' => $o3->mysqli->date2time($row->created)
+			);
+		}
+		return $return;
+	}
+
+	//get results
 	static function get_cpr_results( $cpr ) {
 		global $o3;
 		$return = array();
 		$result = $o3->mysqli->select( 'results', array( "cpr" => $cpr ), '*', '', ' created DESC ' );
 		while ( $row = $result->fetch_object() ) {
 			$return[] = array(
-				'score_left' => $row['score_left'],
-				'score_right' => $row['score_right'],
-				'score' => $row['score'],
+				'score_left' => $row->score_left,
+				'score_right' => $row->score_right,
+				'score' => $row->score,
+				'created' => display_date( $row->created )
 			);
 		}
 		return $return;

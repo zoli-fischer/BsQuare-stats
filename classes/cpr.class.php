@@ -2,6 +2,26 @@
 
 class cpr {
 
+
+	//get cprs 
+	static function get_cprs() {
+		global $o3;
+		$return = array();
+		$result = $o3->mysqli->select( 'cprs', array(), '*', '', ' last_result DESC ' );
+		while ( $row = $result->fetch_object() ) {
+			$return[] = array(
+				'id' => $row->id,
+				'cpr' => $row->cpr,
+				'valid' => $row->valid,
+				'last_score_left' => $row->last_score_left,
+				'last_score_right' => $row->last_score_right,
+				'last_score' => $row->last_score,
+				'last_result' => $o3->mysqli->date2time($row->last_result)
+			);
+		}
+		return $return;
+	}
+
 	//insert new cpr
 	static function insert( $cpr, $score_left, $score_right, $score ) {
 		global $o3;

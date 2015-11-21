@@ -92,4 +92,30 @@ function store_result( $cpr, $result_json ) {
 	return '';
 }
 
+/*
+* Format mysql date to date
+*/
+function display_date( $date, $format = "d.m.Y H:i" ) {
+	return date( $format, $o3->mysqli->date2time( $date ) );
+}
+
+/*
+* Get API calls
+*/
+function get_api_calls() {
+	global $o3;
+	$return = array();
+	$result = $o3->mysqli->select( 'api_calls', array(), '*', '', ' created DESC ' );
+	while ( $row = $result->fetch_object() ) {
+		$return[] = array(
+			'id' => $row->id,
+			'created' => $o3->mysqli->date2time($row->created),
+			'cmd' => $row->cmd,
+			'data_json' => $row->data_json,
+			'ip' => $row->ip
+		);
+	}
+	return $return;
+}
+
 ?>

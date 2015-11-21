@@ -38,13 +38,10 @@
 	<?php
 
 	//load frameworks
-	$o3->body_res( 'jquery,knockout,o3_no_css,o3_route,o3_string,o3_valid,o3_popup_no_css,o3_tooltip_no_css,sprintf,o3_popnote_no_css,bootstrap_no_css' );	
+	$o3->head_res( 'jquery,knockout,o3_no_css,o3_route,o3_string,o3_valid,o3_popup,o3_tooltip_no_css,sprintf,o3_popnote,bootstrap,o3_table,o3_date' );	
 	
 	//create list of css
-	echo $o3->mini->css_link( SITE_ROOT_DIR.'/css/fonts.css', 
-							  O3_RES_DIR.'/js/o3_popup/o3_popup.css', 
-							  O3_RES_DIR.'/js/o3_popnote/o3_popnote.css', 
-							  O3_RES_DIR.'/js/lib/bootstrap/3-latest/css/bootstrap.css', 
+	echo $o3->mini->css_link( SITE_ROOT_DIR.'/css/fonts.css',
 							  SITE_ROOT_DIR.'/css/style.less' );
 
 
