@@ -27,14 +27,16 @@ $o3->module( 'login' );
 $o3->module( 'menu' );
 $o3->module( 'mini' );
 $o3->module( 'template' );
-$o3->module( 'routing' );
-$o3->module( 'form' );
+//$o3->module( 'form' );
 
 //o3 modules load them	
 $o3->load();
 
 //set js load url
 $o3->lang->set_js_url(BS_URL.'/script/lang.php');
+
+//no external lang file
+$o3->lang->set_html_script_external( false );
 
 //set mysqli char encoding
 $o3->mysqli->set_charset("utf8");
@@ -62,6 +64,10 @@ $o3->head_inline('var MAX_CONTRACT_DURATION = '.MAX_CONTRACT_DURATION.',
 //load helper functions
 require_once( BS_CLASS_DIR.'/helpers.php' );
 
+//handle api request
+if ( isset($_REQUEST['api']))
+	require_once('api.php');
+
 //handle ajax request
 if ( isset($_REQUEST['ajax']))
 	require_once('ajax.php');
@@ -81,11 +87,21 @@ if ( isset($_REQUEST['template']))
 //set flag for auto menu item select check
 $o3->menu->check_uri_flag = O3_COMPARE_URI_HOST | O3_COMPARE_URI_PATH;
 
+//is menu item selected
+$menu_selected = false;
+
+//first menu href
+$first_menu_href = '';
+
 //populate menu object
 foreach ( $BS_MAIN_MENU as $key => $value ) {
 
 	//generate link
-	$href = $value['href'] != '' ? $value['href'] : $o3->lang->_($value['language-index'].'-redirect');	
+	$href = $value['href'] != '' ? $value['href'] : $o3->lang->_($value['language-index'].'-seo');	
+
+	//set the first menu href
+	if ( $first_menu_href === '' )
+		$first_menu_href = $href;
 
 	//create menu item
 	$main_menu_item = $o3->menu->add( $key, 
@@ -97,12 +113,15 @@ foreach ( $BS_MAIN_MENU as $key => $value ) {
 	if ( $main_menu_item->selected ) {
 		//show view for selected menu item	
 		$o3->template->view( $value['view'], $key );		
+
+		//set menu selected
+		$menu_selected = true;
 	}
 
 }
-
-//no url requested show login view
-//$o3->routing->function_rule( '/', 'view', $o3->template, 'login' );
+//no menu selected redirect to first menu
+if ( !$menu_selected && $first_menu_href != '' )
+	o3_redirect( $first_menu_href );
 
 //set template
 $o3->template->template('index');

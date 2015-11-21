@@ -1,0 +1,134 @@
+/* VARIABLE */ 
+@bgcolor: #00b9ed;
+@content-bgcolor: #ffffff;
+@active: #538ed3;
+@font-family: "Open Sans", sans-serif;
+
+/* RESET */
+
+body {
+	font-family: @font-family;
+	background: @bgcolor;
+}
+
+h1 {
+	display: block;	
+	background: #444;
+	color: #fff;
+	margin: 10px -15px 10px -15px;	
+	padding: 10px 15px 10px 15px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+	color: @active
+}
+
+/* MAIN */
+div.main {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+footer,
+header,
+section.main {
+	display: table-row;
+	width: 100%;
+}
+
+header > div,
+footer > div,
+section.main > div {
+	display: table-cell;	
+	width: 100%;
+	vertical-align: top;
+
+	> .container {
+		height: 100%;		
+
+		@media (max-width:767px) {
+			border-left: 20px solid @bgcolor;	
+			border-right: 20px solid @bgcolor;	
+		}
+	}
+}
+
+/* HEADER */
+
+header > div {
+	height: 80px;
+	vertical-align: middle;	
+
+	.container {
+		background: @content-bgcolor;	
+		
+		> div,
+		> div > div {
+			height: 80px;
+		}
+	}	
+
+	.logo {
+		max-height: 100%;
+		width: auto;
+	}
+
+	nav {
+		margin-top: 20px;
+
+		.nav-pills_selected a {
+			background-color: @active;
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				color: #000;
+			}
+		}
+	}
+}
+
+/* FOOTER */
+
+footer > div {
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: normal;
+	font-size: 10pt;	
+
+	.container {
+		background: @content-bgcolor;		
+	}
+
+	p {
+		padding-top: 20px;
+	}	
+}
+
+/* CONTENT */
+
+section.main > div {
+	height: 100%;
+
+	.container {
+		background: @content-bgcolor;
+	}
+
+}
+
+/*GLOBAL*/
+
+.spacer {
+	clear: both;
+	overflow: hidden;	
+}
+
+.spacer-s { height: 10px; }
+.spacer-m { height: 20px; }
+.spacer-l { height: 40px; }
