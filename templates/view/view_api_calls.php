@@ -15,7 +15,6 @@
 						headers: [ { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: false } },
 								   { label: 'CMD', content: "cmd" },
 								   { label: 'IP', content: "ip" },
-								   { label: 'ID', content: "id" },
 								   { label: 'JSON', content: "data_json" },
 								 ],
 						scope: api_calls

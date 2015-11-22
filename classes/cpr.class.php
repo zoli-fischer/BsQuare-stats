@@ -2,10 +2,11 @@
 
 class cpr {
 
-
 	//get cprs 
 	static function get_cprs() {
 		global $o3;
+		require_once("result.class.php");
+
 		$return = array();
 		$result = $o3->mysqli->select( 'cprs', array(), '*', '', ' last_result DESC ' );
 		while ( $row = $result->fetch_object() ) {
@@ -16,7 +17,8 @@ class cpr {
 				'last_score_left' => $row->last_score_left,
 				'last_score_right' => $row->last_score_right,
 				'last_score' => $row->last_score,
-				'last_result' => $o3->mysqli->date2time($row->last_result)
+				'last_result' => $o3->mysqli->date2time($row->last_result),
+				'results' => count(result::get_cpr_results( $row->cpr ))
 			);
 		}
 		return $return;

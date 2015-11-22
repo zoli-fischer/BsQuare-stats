@@ -96,6 +96,7 @@ function store_result( $cpr, $result_json ) {
 * Format mysql date to date
 */
 function display_date( $date, $format = "d.m.Y H:i" ) {
+	global $o3;
 	return date( $format, $o3->mysqli->date2time( $date ) );
 }
 

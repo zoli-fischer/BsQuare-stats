@@ -6,10 +6,11 @@ header("Access-Control-Allow-Headers: Origin, X-Titanium-Id, Content-Type, Accep
 
 //ignore direct call of api.php
 if ( isset($o3) ) {
+	$cmd = o3_request('cmd');
+
 	//store api call
 	store_api_call( $cmd, $_REQUEST );
-
-	$cmd = o3_request('cmd');
+	
 	switch ( $cmd ) {
 		case 'check_cpr':
 			echo check_cpr( o3_request('cpr') );

@@ -11,10 +11,15 @@ require_once(BS_CLASS_DIR.'/cpr.class.php');
 			<div class="default_table cprs"></div>
 
 			<script type="text/javascript">
+
+				//show results for cpr
+				function result_url( cpr, results ) {
+					return '<a href="<?php echo get_menu_url(BS_MENU_RESULTS); ?>?cpr='+cpr+'">'+o3_lang_('Results')+' ('+results+')</a>';
+				}
 													
 				var cprs = <?php echo json_encode(cpr::get_cprs())?>,
 					main_table = $('.default_table').o3_table( {
-						headers: [ { label: 'ID', content: "id" },
+						headers: [ { label: '', content: "result_url( cpr, results )" },
 								   { label: '{O3_LANG:CPR number}', content: "cpr" },
 								   { label: '{O3_LANG:Last score}', content: "o3_lang_('score-'+last_score)" },
 								   { label: '{O3_LANG:Left ear}', content: "last_score_left+'%'" },
