@@ -18,6 +18,8 @@ require_once(BS_CLASS_DIR.'/result.class.php');
 								   { label: '{O3_LANG:Score}', content: "o3_lang_('score-'+score)" },
 								   { label: '{O3_LANG:Left ear}', content: "score_left+'%'" },
 								   { label: '{O3_LANG:Right ear}', content: "score_right+'%'" },
+								   { label: '{O3_LANG:Threshold left}', content: "threshold_left+' hz'" },
+								   { label: '{O3_LANG:Threshold right}', content: "threshold_right+' hz'" },
 								   { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: false } },								   
 								 ],
 						scope: results,

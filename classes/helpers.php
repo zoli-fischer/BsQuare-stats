@@ -84,10 +84,10 @@ function store_result( $cpr, $result_json ) {
 	$result = json_decode( $result_json, true );
 	
 	//insert cpr
-	cpr::insert( $cpr, $result['score_left'], $result['score_right'], $result['score'] );
+	cpr::insert( $cpr, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'] );
 
 	//insert result
-	result::insert( $cpr, $result_json, $result['score_left'], $result['score_right'], $result['score'] );
+	result::insert( $cpr, $result_json, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'] );
 
 	return '';
 }

@@ -14,6 +14,9 @@ class result {
 				'score_left' => $row->score_left,
 				'score_right' => $row->score_right,
 				'score' => $row->score,
+				'threshold_left' => $row->threshold_left,
+				'threshold_right' => $row->threshold_right,
+				'fake' => $row->fake == 1,
 				'created' => $o3->mysqli->date2time($row->created)
 			);
 		}
@@ -30,6 +33,9 @@ class result {
 				'score_left' => $row->score_left,
 				'score_right' => $row->score_right,
 				'score' => $row->score,
+				'threshold_left' => $row->threshold_left,
+				'threshold_right' => $row->threshold_right,
+				'fake' => $row->fake == 1,
 				'created' => display_date( $row->created )
 			);
 		}
@@ -37,7 +43,7 @@ class result {
 	}
 
 	//insert new cpr
-	static function insert( $cpr, $result_json, $score_left, $score_right, $score ) {
+	static function insert( $cpr, $result_json, $score_left, $score_right, $score, $treshould_left, $treshould_right, $fake ) {
 		global $o3;
 
 		//check cpr
@@ -48,13 +54,19 @@ class result {
 			'result_json' => $result_json,
 			'score_left' => $score_left,
 			'score_right' => $score_right,
-			'score' => $score
+			'score' => $score,
+			'treshould_left' => $treshould_left, 
+			'treshould_right' => $treshould_right, 
+			'fake' => $fake === true ? 1 : 0
 		);
 		$update_values = array(
 			'result_json' => $result_json,
 			'score_left' => $score_left,
 			'score_right' => $score_right,
-			'score' => $score
+			'score' => $score,
+			'treshould_left' => $treshould_left, 
+			'treshould_right' => $treshould_right, 
+			'fake' => $fake === true ? 1 : 0
 		);
 
 		if ( $o3->mysqli->insert( 'results', $values, $update_values ) )

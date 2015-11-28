@@ -130,7 +130,7 @@ define( 'BS_MENU_SETTINGS', 'settings' );
 $BS_MAIN_MENU = array(
 	BS_MENU_CPRS => array( 'language-index' => 'menu-'.BS_MENU_CPRS, 'view' => 'view_'.BS_MENU_CPRS, 'href' => '', 'target' => '_self' ),
 	BS_MENU_RESULTS => array( 'language-index' => 'menu-'.BS_MENU_RESULTS, 'view' => 'view_'.BS_MENU_RESULTS, 'href' => '', 'target' => '_self' ),
-	BS_MENU_STATS => array( 'language-index' => 'menu-'.BS_MENU_STATS, 'view' => 'view_'.BS_MENU_STATS, 'href' => '', 'target' => '_self' ),
+	//BS_MENU_STATS => array( 'language-index' => 'menu-'.BS_MENU_STATS, 'view' => 'view_'.BS_MENU_STATS, 'href' => '', 'target' => '_self' ),
 	BS_MENU_API_CALLS => array( 'language-index' => 'menu-'.BS_MENU_API_CALLS, 'view' => 'view_'.BS_MENU_API_CALLS, 'href' => '', 'target' => '_self' ),
 	BS_MENU_SETTINGS => array( 'language-index' => 'menu-'.BS_MENU_SETTINGS, 'view' => 'view_'.BS_MENU_SETTINGS, 'href' => '', 'target' => '_self' )
 );
