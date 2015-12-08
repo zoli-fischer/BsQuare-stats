@@ -21,7 +21,7 @@ require_once(BS_CLASS_DIR.'/cpr.class.php');
 					main_table = $('.default_table').o3_table( {
 						headers: [ { label: '', content: "result_url( cpr, results )" },
 								   { label: '{O3_LANG:CPR number}', content: "cpr" },
-								   { label: '{O3_LANG:Last score}', content: "o3_lang_('score-'+last_score)" },
+								   { label: '{O3_LANG:Last score}', content: "o3_lang_('score-'+last_score)+show_is_fake(last_fake)" },
 								   { label: '{O3_LANG:Left ear}', content: "last_score_left+'%'" },
 								   { label: '{O3_LANG:Right ear}', content: "last_score_right+'%'" },
 								   { label: '{O3_LANG:Threshold left}', content: "last_threshold_left+' hz'" },

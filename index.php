@@ -48,18 +48,7 @@ $o3->debug->_('BsQuare v'.BS_VERSION);
 $o3->lang->load('menu');
 
 //insert global settings in html head
-/*
-$o3->head_inline('var MAX_CONTRACT_DURATION = '.MAX_CONTRACT_DURATION.', 
-					  MIN_CONTRACT_DURATION = '.MIN_CONTRACT_DURATION.',
-					  VAT_PERCENT = '.VAT_PERCENT.',
-					  MIN_VEHICLE_AGE = '.MIN_VEHICLE_AGE.',
-					  DEFAULT_INSURANCE = '.DEFAULT_INSURANCE.',
-					  MAX_ACCOUNT_BONUS = '.MAX_ACCOUNT_BONUS.',
-					  SCANLEASING_COMPANY_ID = '.SCANLEASING_COMPANY_ID.',
-					  VEHICLE_TYPE_CAR = '.VEHICLE_TYPE_CAR.',
-					  VEHICLE_TYPE_VAN = '.VEHICLE_TYPE_VAN.',
-					  VEHICLE_TYPE_MOTORCYCLE = '.VEHICLE_TYPE_MOTORCYCLE.';', 'javascript');
-*/
+//$o3->head_inline('', 'javascript');
 
 //load helper functions
 require_once( BS_CLASS_DIR.'/helpers.php' );

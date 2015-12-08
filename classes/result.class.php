@@ -2,6 +2,33 @@
 
 class result {
 
+	//get result by id
+	static function get_result_by_id( $id ) {
+		global $o3;
+		$return = array();
+		$result = $o3->mysqli->select( 'results', array( 'id' => $id ), '*', '', ' created DESC ' );
+		if ( $row = $result->fetch_array() ) {
+			$row['result'] = json_decode( $row['result_json'], true );
+
+			$row['left_result'] = array();
+			$row['right_result'] = array();
+			foreach ( $row['result']['result'] as $value ) {
+				if ( strpos($value['hz'], 'L') !== false ) {					
+					$value['hz'] = intval(str_replace('L', '', $value['hz']));
+					$value['correct'] = $value['answer'] == 'L';
+					$row['left_result'][$value['hz']] = $value;
+				} else if ( strpos($value['hz'], 'R') !== false ) {
+					$value['hz'] = intval(str_replace('R', '', $value['hz']));
+					$value['correct'] = $value['answer'] == 'R';
+					$row['right_result'][$value['hz']] = $value;
+				}
+			}
+
+			return $row;
+		}
+		return false;
+	}
+
 	//get results
 	static function get_results() {
 		global $o3;

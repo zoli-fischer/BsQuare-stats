@@ -38,7 +38,7 @@
 	<?php
 
 	//load frameworks
-	$o3->head_res( 'jquery,knockout,o3_no_css,o3_route,o3_string,o3_valid,o3_popup,o3_tooltip_no_css,sprintf,o3_popnote,bootstrap,o3_table,o3_date' );	
+	$o3->head_res( 'jquery,knockout,o3_no_css,o3_route,o3_string,o3_valid,o3_popup,o3_tooltip,sprintf,o3_popnote,bootstrap,o3_table,o3_date,awesome' );	
 	
 	//create list of css
 	echo $o3->mini->css_link( SITE_ROOT_DIR.'/css/fonts.css',
@@ -46,7 +46,7 @@
 
 
 	//load res.	
-	$o3->body_res( '', SITE_ROOT_DIR.'/script/script.js' );	
+	$o3->head_res( '', SITE_ROOT_DIR.'/script/script.js' );	
 	
 	//inline js
 	?>

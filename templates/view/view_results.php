@@ -14,8 +14,9 @@ require_once(BS_CLASS_DIR.'/result.class.php');
 													
 				var results = <?php echo json_encode(result::get_results())?>,
 					main_table = $('.default_table').o3_table( {
-						headers: [ { label: '{O3_LANG:CPR number}', content: "cpr" },
-								   { label: '{O3_LANG:Score}', content: "o3_lang_('score-'+score)" },
+						headers: [ { label: '', content: "result_detail_icon(id)" },
+								   { label: '{O3_LANG:CPR number}', content: "cpr" },
+								   { label: '{O3_LANG:Score}', content: "o3_lang_('score-'+score)+show_is_fake(fake)" },
 								   { label: '{O3_LANG:Left ear}', content: "score_left+'%'" },
 								   { label: '{O3_LANG:Right ear}', content: "score_right+'%'" },
 								   { label: '{O3_LANG:Threshold left}', content: "threshold_left+' hz'" },
