@@ -21,7 +21,7 @@ require_once(BS_CLASS_DIR.'/result.class.php');
 								   { label: '{O3_LANG:Right ear}', content: "score_right+'%'" },
 								   { label: '{O3_LANG:Threshold left}', content: "threshold_left+' hz'" },
 								   { label: '{O3_LANG:Threshold right}', content: "threshold_right+' hz'" },
-								   { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: false } },								   
+								   { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: true } },								   
 								 ],
 						scope: results,
 						search: '<?php echo o3_get('cpr',''); ?>'

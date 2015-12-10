@@ -71,12 +71,13 @@ function store_api_call( $cmd, $data ) {
 			"data_json" => json_encode($data),
 			"ip" => $_SERVER['REMOTE_ADDR']
 		) );
+	return $o3->mysqli->insert_id;
 }
 
 /*
 * Store result
 */
-function store_result( $cpr, $result_json ) {
+function store_result( $cpr, $result_json, $api_id ) {
 	require_once(BS_CLASS_DIR.'/cpr.class.php');
 	require_once(BS_CLASS_DIR.'/result.class.php');
 
@@ -84,10 +85,10 @@ function store_result( $cpr, $result_json ) {
 	$result = json_decode( $result_json, true );
 	
 	//insert cpr
-	cpr::insert( $cpr, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'] );
+	$cpr_id = cpr::insert( $cpr, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'] );	
 
 	//insert result
-	result::insert( $cpr, $result_json, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'] );
+	result::insert( $cpr, $result_json, $result['score_left'], $result['score_right'], $result['score'], $result['treshould_left'], $result['treshould_right'], $result['fake'], $cpr_id, $api_id );
 
 	return '';
 }

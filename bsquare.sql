@@ -157,7 +157,38 @@ INSERT INTO `api_calls` (`id`, `created`, `cmd`, `data_json`, `ip`) VALUES
 (134, '2015-12-09 16:17:34', 'get_results', '{"api":"","cmd":"get_results","cpr":"1510833607"}', '94.126.3.127'),
 (135, '2015-12-09 20:21:42', 'check_cpr', '{"api":"","cmd":"check_cpr","cpr":"030686-3741"}', '87.60.141.180'),
 (136, '2015-12-09 20:21:50', 'check_cpr', '{"api":"","cmd":"check_cpr","cpr":"030687-3741"}', '87.60.141.180'),
-(137, '2015-12-09 20:22:27', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3741","result":"{\\"fake\\":false,\\"score_left\\":100,\\"score_right\\":100,\\"score\\":4,\\"result\\":[{\\"hz\\":\\"2000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"2000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"4000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"4000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"1000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"1000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"\\",\\"answer\\":\\"\\"},{\\"hz\\":\\"500L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"500R\\",\\"answer\\":\\"R\\"}],\\"threshold_left\\":6000,\\"threshold_right\\":6000}"}', '87.60.141.180');
+(137, '2015-12-09 20:22:27', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3741","result":"{\\"fake\\":false,\\"score_left\\":100,\\"score_right\\":100,\\"score\\":4,\\"result\\":[{\\"hz\\":\\"2000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"2000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"4000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"4000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"1000R\\",\\"answer\\":\\"R\\"},{\\"hz\\":\\"1000L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"\\",\\"answer\\":\\"\\"},{\\"hz\\":\\"500L\\",\\"answer\\":\\"L\\"},{\\"hz\\":\\"500R\\",\\"answer\\":\\"R\\"}],\\"threshold_left\\":6000,\\"threshold_right\\":6000}"}', '87.60.141.180'),
+(138, '2015-12-10 12:21:35', '', '{"api":""}', '10.0.0.1'),
+(139, '2015-12-10 12:21:49', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-374","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(140, '2015-12-10 12:22:10', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-374","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(141, '2015-12-10 12:25:34', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-374","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(142, '2015-12-10 12:25:45', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-374","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(143, '2015-12-10 12:26:22', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-374","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(144, '2015-12-10 12:26:40', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(145, '2015-12-10 12:26:58', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(146, '2015-12-10 12:27:10', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(147, '2015-12-10 12:29:22', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(148, '2015-12-10 12:29:36', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(149, '2015-12-10 12:29:37', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(150, '2015-12-10 12:30:03', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(151, '2015-12-10 12:30:27', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(152, '2015-12-10 12:30:46', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(153, '2015-12-10 12:31:29', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(154, '2015-12-10 12:33:15', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(155, '2015-12-10 12:42:50', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(156, '2015-12-10 12:43:19', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(157, '2015-12-10 12:43:25', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(158, '2015-12-10 12:43:26', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(159, '2015-12-10 12:43:39', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(160, '2015-12-10 12:46:24', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(161, '2015-12-10 12:46:32', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(162, '2015-12-10 12:46:56', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(163, '2015-12-10 12:47:08', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(164, '2015-12-10 12:47:23', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(165, '2015-12-10 12:47:38', 'new_result', '{"api":"","cmd":"new_result","cpr":"030687-3740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(166, '2015-12-10 12:48:17', 'new_result', '{"api":"","cmd":"new_result","cpr":"0306873740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(167, '2015-12-10 12:48:55', 'new_result', '{"api":"","cmd":"new_result","cpr":"0306873740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1'),
+(168, '2015-12-10 12:49:54', 'new_result', '{"api":"","cmd":"new_result","cpr":"0306873740","result":"[{\\"score_left\\":\\"0\\",\\"score_right\\":\\"0\\",\\"score\\":\\"1\\",\\"threshold_left\\":\\"4000\\",\\"threshold_right\\":\\"6000\\",\\"fake\\":false,\\"created\\":\\"25.11.2015 08:19\\"}]"}', '10.0.0.1');
 
 -- --------------------------------------------------------
 
@@ -186,8 +217,8 @@ CREATE TABLE `cprs` (
 INSERT INTO `cprs` (`id`, `cpr`, `valid`, `gender`, `last_score_left`, `last_score_right`, `last_score`, `last_result`, `last_threshold_left`, `last_threshold_right`, `last_fake`) VALUES
 (1, '1510833607', 1, '0', 0, 0, 1, '2015-11-28 08:42:11', 2000, 500, 1),
 (2, '1002852637', 0, '0', 40, 40, 1, '2015-11-28 08:35:50', 4000, 2000, 1),
-(3, '030687-374', 1, '0', 0, 0, 1, '2015-11-28 08:35:25', 500, 2000, 0),
-(4, '0306871234', 1, '1', 20, 0, 1, '2015-11-28 08:35:52', 1000, 500, 1);
+(4, '0306871234', 1, '1', 20, 0, 1, '2015-11-28 08:35:52', 1000, 500, 1),
+(5, '0306873740', 0, '0', 0, 0, 0, '2015-12-10 12:49:54', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -205,27 +236,31 @@ CREATE TABLE `results` (
   `score` int(11) NOT NULL DEFAULT '0',
   `threshold_left` int(11) NOT NULL DEFAULT '6000',
   `threshold_right` int(11) NOT NULL DEFAULT '6000',
-  `fake` tinyint(4) NOT NULL DEFAULT '0'
+  `fake` tinyint(4) NOT NULL DEFAULT '0',
+  `api_call_id` int(11) NOT NULL DEFAULT '0',
+  `cpr_id` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_danish_ci;
 
 --
 -- Dumping data for table `results`
 --
 
-INSERT INTO `results` (`id`, `cpr`, `created`, `result_json`, `score_left`, `score_right`, `score`, `threshold_left`, `threshold_right`, `fake`) VALUES
-(1, '1510833607', '2015-11-21 18:17:25', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 0, 0, 1, 6000, 6000, 1),
-(2, '1510833607', '2015-11-21 18:18:09', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 0, 0, 1, 6000, 2000, 0),
-(3, '1510833607', '2015-11-21 18:20:11', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', -20, -20, 1, 500, 6000, 1),
-(4, '1002852637', '2015-11-21 18:20:39', '{"score_left":40,"score_right":40,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 40, 40, 1, 500, 6000, 0),
-(5, '1510833607', '2015-11-21 18:26:39', '', 0, 0, 0, 1000, 6000, 0),
-(6, '1510833607', '2015-11-21 21:46:13', '{"score_left":-20,"score_right":-60,"score":1,"result":[{"hz":"4000L","answer":"L"},{"hz":"2000L","answer":"R"},{"hz":"4000R","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"","answer":"R"},{"hz":"1000L","answer":"R"},{"hz":"500L","answer":"L"},{"hz":"1000R","answer":"L"}]}', -20, -60, 1, 6000, 2000, 1),
-(7, '1510833607', '2015-11-21 21:47:22', '{"score_left":60,"score_right":60,"score":3,"result":[{"hz":"","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"1000L","answer":"L"},{"hz":"2000L","answer":"L"},{"hz":"500R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"500L","answer":"L"},{"hz":"4000R","answer":"R"}]}', 60, 60, 3, 6000, 2000, 0),
-(8, '030687-374', '2015-11-25 07:19:52', '{"score_left":0,"score_right":0,"score":1,"result":[{"hz":"1000R","answer":"L"},{"hz":"4000L","answer":""},{"hz":"2000L","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"500R","answer":"R"},{"hz":"4000R","answer":"L"},{"hz":"","answer":"R"},{"hz":"1000L","answer":"L"},{"hz":"500L","answer":""}]}', 0, 0, 1, 4000, 6000, 0),
-(9, '0306871234', '2015-11-25 08:11:35', '{"score_left":20,"score_right":0,"score":1,"result":[{"hz":"1000R","answer":"L"},{"hz":"500L","answer":"R"},{"hz":"500R","answer":""},{"hz":"2000L","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"","answer":""},{"hz":"4000R","answer":"R"},{"hz":"2000R","answer":""},{"hz":"4000L","answer":"L"}]}', 20, 0, 1, 4000, 2000, 1),
-(10, '1510833607', '2015-11-28 08:32:46', '{"fake":true,"score_left":0,"score_right":20,"score":1,"result":[{"hz":"2000R","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"","answer":"L"},{"hz":"1000R","answer":"R"},{"hz":"500L","answer":""},{"hz":"2000L","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"4000L","answer":""}],"treshould_left":500,"treshould_right":500}', 0, 20, 1, 2000, 4000, 0),
-(11, '1510833607', '2015-11-28 08:33:52', '{"fake":false,"score_left":100,"score_right":100,"score":4,"result":[{"hz":"500L","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"2000R","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"1000L","answer":"L"},{"hz":"500R","answer":"R"},{"hz":"","answer":""},{"hz":"2000L","answer":"L"},{"hz":"1000R","answer":"R"}],"treshould_left":6000,"treshould_right":6000}', 100, 100, 4, 6000, 6000, 0),
-(12, '1510833607', '2015-11-28 08:40:36', '{"fake":true,"score_left":0,"score_right":0,"score":1,"result":[{"hz":"500L","answer":"R"},{"hz":"4000R","answer":""},{"hz":"1000L","answer":"L"},{"hz":"2000R","answer":""},{"hz":"500R","answer":"R"},{"hz":"1000R","answer":"L"},{"hz":"2000L","answer":""},{"hz":"4000L","answer":"R"},{"hz":"","answer":"L"}],"treshould_left":500,"treshould_right":1000}', 0, 0, 1, 500, 1000, 1),
-(13, '1510833607', '2015-11-28 08:42:11', '{"fake":true,"score_left":0,"score_right":0,"score":1,"result":[{"hz":"","answer":"R"},{"hz":"4000L","answer":""},{"hz":"500L","answer":"L"},{"hz":"1000R","answer":"R"},{"hz":"500R","answer":""},{"hz":"4000R","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"2000L","answer":""},{"hz":"1000L","answer":"L"}],"treshould_left":2000,"treshould_right":500}', 0, 0, 1, 2000, 500, 1);
+INSERT INTO `results` (`id`, `cpr`, `created`, `result_json`, `score_left`, `score_right`, `score`, `threshold_left`, `threshold_right`, `fake`, `api_call_id`, `cpr_id`) VALUES
+(1, '1510833607', '2015-11-21 18:17:25', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 0, 0, 1, 6000, 6000, 1, 0, 0),
+(2, '1510833607', '2015-11-21 18:18:09', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 0, 0, 1, 6000, 2000, 0, 0, 0),
+(3, '1510833607', '2015-11-21 18:20:11', '{"score_left":-20,"score_right":-20,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', -20, -20, 1, 500, 6000, 1, 0, 0),
+(4, '1002852637', '2015-11-21 18:20:39', '{"score_left":40,"score_right":40,"score":1,"result":[{"hz":"2000L","answer":"L"},{"hz":"","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"2000R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"500L","answer":"R"}]}', 40, 40, 1, 500, 6000, 0, 0, 0),
+(5, '1510833607', '2015-11-21 18:26:39', '', 0, 0, 0, 1000, 6000, 0, 0, 0),
+(6, '1510833607', '2015-11-21 21:46:13', '{"score_left":-20,"score_right":-60,"score":1,"result":[{"hz":"4000L","answer":"L"},{"hz":"2000L","answer":"R"},{"hz":"4000R","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"","answer":"R"},{"hz":"1000L","answer":"R"},{"hz":"500L","answer":"L"},{"hz":"1000R","answer":"L"}]}', -20, -60, 1, 6000, 2000, 1, 0, 0),
+(7, '1510833607', '2015-11-21 21:47:22', '{"score_left":60,"score_right":60,"score":3,"result":[{"hz":"","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"1000L","answer":"L"},{"hz":"2000L","answer":"L"},{"hz":"500R","answer":"R"},{"hz":"1000R","answer":"R"},{"hz":"500L","answer":"L"},{"hz":"4000R","answer":"R"}]}', 60, 60, 3, 6000, 2000, 0, 0, 0),
+(9, '0306871234', '2015-11-25 08:11:35', '{"score_left":20,"score_right":0,"score":1,"result":[{"hz":"1000R","answer":"L"},{"hz":"500L","answer":"R"},{"hz":"500R","answer":""},{"hz":"2000L","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"","answer":""},{"hz":"4000R","answer":"R"},{"hz":"2000R","answer":""},{"hz":"4000L","answer":"L"}]}', 20, 0, 1, 4000, 2000, 1, 0, 0),
+(10, '1510833607', '2015-11-28 08:32:46', '{"fake":true,"score_left":0,"score_right":20,"score":1,"result":[{"hz":"2000R","answer":"R"},{"hz":"500R","answer":"L"},{"hz":"1000L","answer":"R"},{"hz":"","answer":"L"},{"hz":"1000R","answer":"R"},{"hz":"500L","answer":""},{"hz":"2000L","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"4000L","answer":""}],"treshould_left":500,"treshould_right":500}', 0, 20, 1, 2000, 4000, 0, 0, 0),
+(11, '1510833607', '2015-11-28 08:33:52', '{"fake":false,"score_left":100,"score_right":100,"score":4,"result":[{"hz":"500L","answer":"L"},{"hz":"4000R","answer":"R"},{"hz":"2000R","answer":"R"},{"hz":"4000L","answer":"L"},{"hz":"1000L","answer":"L"},{"hz":"500R","answer":"R"},{"hz":"","answer":""},{"hz":"2000L","answer":"L"},{"hz":"1000R","answer":"R"}],"treshould_left":6000,"treshould_right":6000}', 100, 100, 4, 6000, 6000, 0, 0, 0),
+(12, '1510833607', '2015-11-28 08:40:36', '{"fake":true,"score_left":0,"score_right":0,"score":1,"result":[{"hz":"500L","answer":"R"},{"hz":"4000R","answer":""},{"hz":"1000L","answer":"L"},{"hz":"2000R","answer":""},{"hz":"500R","answer":"R"},{"hz":"1000R","answer":"L"},{"hz":"2000L","answer":""},{"hz":"4000L","answer":"R"},{"hz":"","answer":"L"}],"treshould_left":500,"treshould_right":1000}', 0, 0, 1, 500, 1000, 1, 0, 0),
+(13, '1510833607', '2015-11-28 08:42:11', '{"fake":true,"score_left":0,"score_right":0,"score":1,"result":[{"hz":"","answer":"R"},{"hz":"4000L","answer":""},{"hz":"500L","answer":"L"},{"hz":"1000R","answer":"R"},{"hz":"500R","answer":""},{"hz":"4000R","answer":"L"},{"hz":"2000R","answer":"R"},{"hz":"2000L","answer":""},{"hz":"1000L","answer":"L"}],"treshould_left":2000,"treshould_right":500}', 0, 0, 1, 2000, 500, 1, 0, 0),
+(22, '0306873740', '2015-12-10 12:48:17', '[{"score_left":"0","score_right":"0","score":"1","threshold_left":"4000","threshold_right":"6000","fake":false,"created":"25.11.2015 08:19"}]', 0, 0, 0, 0, 0, 0, 166, 5),
+(23, '0306873740', '2015-12-10 12:48:55', '[{"score_left":"0","score_right":"0","score":"1","threshold_left":"4000","threshold_right":"6000","fake":false,"created":"25.11.2015 08:19"}]', 0, 0, 0, 0, 0, 0, 167, 5),
+(24, '0306873740', '2015-12-10 12:49:54', '[{"score_left":"0","score_right":"0","score":"1","threshold_left":"4000","threshold_right":"6000","fake":false,"created":"25.11.2015 08:19"}]', 0, 0, 0, 0, 0, 0, 168, 5);
 
 --
 -- Indexes for dumped tables
@@ -250,7 +285,9 @@ ALTER TABLE `cprs`
 --
 ALTER TABLE `results`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `cpr` (`cpr`);
+  ADD KEY `cpr` (`cpr`),
+  ADD KEY `api_call_id` (`api_call_id`),
+  ADD KEY `cpr_id` (`cpr_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -260,14 +297,14 @@ ALTER TABLE `results`
 -- AUTO_INCREMENT for table `api_calls`
 --
 ALTER TABLE `api_calls`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 --
 -- AUTO_INCREMENT for table `cprs`
 --
 ALTER TABLE `cprs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `results`
 --
 ALTER TABLE `results`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;

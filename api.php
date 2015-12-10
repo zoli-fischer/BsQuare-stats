@@ -9,7 +9,7 @@ if ( isset($o3) ) {
 	$cmd = o3_request('cmd');
 
 	//store api call
-	store_api_call( $cmd, $_REQUEST );
+	$api_id = store_api_call( $cmd, $_REQUEST );
 	
 	switch ( $cmd ) {
 		case 'check_cpr':
@@ -17,7 +17,7 @@ if ( isset($o3) ) {
 			die();
 			break;
 		case 'new_result':
-			echo store_result( o3_request('cpr'), o3_request('result') );
+			echo store_result( o3_request('cpr'), o3_request('result'), $api_id );
 			die();
 			break;
 		case 'get_results':

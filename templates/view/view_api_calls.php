@@ -12,7 +12,7 @@
 													
 				var api_calls = <?php echo json_encode(get_api_calls())?>,
 					main_table = $('.default_table').o3_table( {
-						headers: [ { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: false } },
+						headers: [ { label: '{O3_LANG:Date}', content: "o3_date( 'd.m.Y H:i:s', created )", sort: { is_default: true, type: 'number', ascending: true } },
 								   { label: 'CMD', content: "cmd" },
 								   { label: 'IP', content: "ip" },
 								   { label: 'JSON', content: "data_json" },

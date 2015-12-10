@@ -70,7 +70,7 @@ class result {
 	}
 
 	//insert new cpr
-	static function insert( $cpr, $result_json, $score_left, $score_right, $score, $treshould_left, $treshould_right, $fake ) {
+	static function insert( $cpr, $result_json, $score_left, $score_right, $score, $treshould_left, $treshould_right, $fake, $cpr_id, $api_id ) {
 		global $o3;
 
 		//check cpr
@@ -82,19 +82,23 @@ class result {
 			'score_left' => $score_left,
 			'score_right' => $score_right,
 			'score' => $score,
-			'treshould_left' => $treshould_left, 
-			'treshould_right' => $treshould_right, 
-			'fake' => $fake === true ? 1 : 0
+			'threshold_left' => $treshould_left, 
+			'threshold_right' => $treshould_right, 
+			'fake' => $fake === true ? 1 : 0,
+			'api_call_id' => $api_id,
+			'cpr_id' => $cpr_id
 		);
 		$update_values = array(
 			'result_json' => $result_json,
 			'score_left' => $score_left,
 			'score_right' => $score_right,
 			'score' => $score,
-			'treshould_left' => $treshould_left, 
-			'treshould_right' => $treshould_right, 
-			'fake' => $fake === true ? 1 : 0
-		);
+			'threshold_left' => $treshould_left, 
+			'threshold_right' => $treshould_right, 
+			'fake' => $fake === true ? 1 : 0,
+			'api_call_id' => $api_id,
+			'cpr_id' => $cpr_id
+		);				
 
 		if ( $o3->mysqli->insert( 'results', $values, $update_values ) )
 			return $o3->mysqli->insert_id;
